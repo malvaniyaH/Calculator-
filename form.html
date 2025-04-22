@@ -1,0 +1,76 @@
+<html>
+  <style>
+     table{
+	 background-color:skyblue;
+	 color:white;
+	 height:50px;
+	 width:200px;
+	 padding:10px;
+	 }
+	 td{
+	   background-color:gray; 
+	   font-size:35;
+	 }
+	 th{
+	  background-color:lightgreen;
+	  padding:9px;
+	 }
+	 select
+	 {
+	 margin-left:70px;
+	 }
+     
+  </style>
+ <script type="text/javascript">
+   
+ </script>
+<head>
+</head>
+<body>
+<div name="g">
+ <table>
+  <tr>
+    <td colspan="3"><input type="dipaly" name="n">
+    <br>
+	  <select>
+	     <option>+</option>
+	     <option>-</option>
+	     <option>/</option>
+	     <option>*</option>
+	  </select>
+	<br><input type="dipaly" name="n1">
+    <td>Oreva<br> Calcie 
+  </tr>
+  <tr>
+    
+     <th colspan="2"><input type="submit" value="Clear" onclick="clearDisplay()">
+	 <th><button onclick="operate('+/-')">+/-
+	   <th rowspan="2"><input type="submit" value="=" onclick="Calculate()">
+  </tr>
+  <tr>
+    <th><input type="submit" value="7" onclick="appendNumber('7')">
+    <th><input type="submit" value="8" onclick="appendNumber('8')">
+    <th><input type="submit" value="9" onclick="appendNumber('9')">
+   
+  </tr>
+  <tr>
+    <th><input type="submit" value="4" onclick="appendNumber('4')">
+    <th><input type="submit" value="5" onclick="appendNumber('5')">
+    <th><input type="submit" value="6" onclick="appendNumber('6')">
+   <th rowspan="3"><p> You Can Calculate <br> Addition,Divtion,<br>Multiphlication<br>And Subtarctn</p>
+  </tr>
+  <tr>
+   <th><input type="submit" value="1" onclick="appendNumber('1')">
+   <th><input type="submit" value="2" onclick="appendNumber('2')">
+   <th><input type="submit" value="3" onclick="appendNumber('3')">
+  </tr>
+  <tr>
+    <th><input type="submit" value="%" onclick="operate('%')">
+    <th><input type="submit" value="0" onclick="appendNumber('0')">
+    <th><input type="submit" value="." onclick="operate('.')">
+	
+  </tr>
+ </table>
+</div>
+</body>
+</html>
